@@ -41,7 +41,7 @@ if st.button("Download"):
                     }
                 else:
                     ydl_opts = {
-                        'format': f"bestvideo[height<={quality_choice}]+bestaudio/best[height<={quality_choice}]",
+                        'format': f"bestvideo[height<={quality_choice}]+bestaudio/best",
                         'outtmpl': f'{temp_dir}/%(title)s.%(ext)s',
                         'merge_output_format': format_choice
                     }
